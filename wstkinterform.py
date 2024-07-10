@@ -89,10 +89,10 @@ postcode_entry.grid(row=12, column=2, sticky=tk.W)
 tk.Label(root, text="อาชีพ:").grid(row=13, column=1, sticky=tk.W)
 tk.OptionMenu(root, occupation_var, "กรุณาเลือก", "นักเรียน", "ครู/อาจารย์").grid(row=13, column=2, sticky=tk.W)
 
-tk.Label(root, text="งานอดิเรก:").grid(row=13, column=1, sticky=tk.W)
+tk.Label(root, text="งานอดิเรก:").grid(row=14, column=1, sticky=tk.W)
 row = 13
 for hobby, var in hobbies_vars.items():
-    row += 1
+    row += 1, 
     tk.Checkbutton(root, text=hobby, variable=var).grid(row=row, column=2, sticky=tk.W)
 
 tk.Label(root, text="ข้อมูลผู้ใช้",bg="pink", font=("Helvetica", 14)).grid(row=20, column=0)
